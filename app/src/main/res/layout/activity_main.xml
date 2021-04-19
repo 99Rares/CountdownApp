@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bebebe"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="Date : "
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="8dp"
+        android:text="Name : "
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="470dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parentLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/countview"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/countview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isHideTimeBackground="false"
+            app:isShowDay="true"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:suffixDay="D"
+            app:suffixGravity="center"
+            app:suffixHour="H"
+            app:suffixMillisecond="SS"
+            app:suffixMinute="M"
+            app:suffixSecond="S"
+            app:suffixTextColor="@color/colorText"
+            app:suffixTextSize="20sp"
+            app:timeBgColor="@color/colorPrimary"
+            app:timeBgDivisionLineSize="1dp"
+            app:timeBgRadius="7dp"
+            app:timeBgSize="50dp"
+            app:timeTextColor="@color/colorText"
+            app:timeTextSize="40sp" />
+
+        <TextView
+            android:id="@+id/home2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/countview"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/countview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isHideTimeBackground="false"
+            app:isShowDay="true"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:suffixDay="D"
+            app:suffixGravity="center"
+            app:suffixHour="H"
+            app:suffixMillisecond="SS"
+            app:suffixMinute="M"
+            app:suffixSecond="S"
+            app:suffixTextColor="@color/colorText"
+            app:suffixTextSize="20sp"
+            app:timeBgColor="@color/colorPrimary"
+            app:timeBgDivisionLineSize="1dp"
+            app:timeBgRadius="7dp"
+            app:timeBgSize="50dp"
+            app:timeTextColor="@color/colorText"
+            app:timeTextSize="40sp" />
+
+        <TextView
+            android:id="@+id/home3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/countview"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/countview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isHideTimeBackground="false"
+            app:isShowDay="true"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:suffixDay="D"
+            app:suffixGravity="center"
+            app:suffixHour="H"
+            app:suffixMillisecond="SS"
+            app:suffixMinute="M"
+            app:suffixSecond="S"
+            app:suffixTextColor="@color/colorText"
+            app:suffixTextSize="20sp"
+            app:timeBgColor="@color/colorPrimary"
+            app:timeBgDivisionLineSize="1dp"
+            app:timeBgRadius="7dp"
+            app:timeBgSize="50dp"
+            app:timeTextColor="@color/colorText"
+            app:timeTextSize="40sp" />
+
+        <TextView
+            android:id="@+id/home4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/countview"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/countview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isHideTimeBackground="false"
+            app:isShowDay="true"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:suffixDay="D"
+            app:suffixGravity="center"
+            app:suffixHour="H"
+            app:suffixMillisecond="SS"
+            app:suffixMinute="M"
+            app:suffixSecond="S"
+            app:suffixTextColor="@color/colorText"
+            app:suffixTextSize="20sp"
+            app:timeBgColor="@color/colorPrimary"
+            app:timeBgDivisionLineSize="1dp"
+            app:timeBgRadius="7dp"
+            app:timeBgSize="50dp"
+            app:timeTextColor="@color/colorText"
+            app:timeTextSize="40sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorPrimary"
+        android:text="Reset All"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="DD.MM.YYYY HH:MM"
+        android:textColor="@color/colorText"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="@+id/editText" />
+
+
+</android.support.constraint.ConstraintLayout>
